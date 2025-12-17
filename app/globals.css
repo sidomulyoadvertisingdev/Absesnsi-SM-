@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================
+   Custom Styles (Minimal & Aman)
+   ============================ */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f2537;          /* background utama */
+  color: #ffffff;               /* default text agar sesuai tema */
+}
+
+.mobile-wrapper {
+  max-width: 420px;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+  background: #0f2537;
+}
+
+/* Summary grid tetap manual */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.summary-number {
+  font-weight: bold;
+}
+
+/* Bottom navigation agar tidak ketimpa */
+.bottom-nav {
+  z-index: 50;
+}
